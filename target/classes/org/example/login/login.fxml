@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="267.0" prefWidth="372.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.login.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <children>
+      <Pane prefHeight="53.0" prefWidth="332.0">
+         <children>
+            <Label prefHeight="53.0" prefWidth="240.0" text="Welcome">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <GridPane prefHeight="62.0" prefWidth="318.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.20001220703125" minWidth="10.0" prefWidth="85.40001220703125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="287.2" minWidth="10.0" prefWidth="246.99998779296874" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="18.0" prefWidth="89.0" text="User Name:" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="82.0" text="Password  :" GridPane.rowIndex="1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField prefHeight="12.0" prefWidth="275.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Pane prefHeight="42.0" prefWidth="332.0">
+         <children>
+            <Button layoutX="266.0" layoutY="8.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" text="Sign in" />
+         </children>
+      </Pane>
+   </children>
+</VBox>
